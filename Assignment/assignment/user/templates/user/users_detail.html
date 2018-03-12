@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  </head>
+  <body>
+<p>hello</p>
+<h1>{{ user.user_id }}</h1>
+
+<a class="btn btn-primary" href="{% url 'user_edit' pk=user.user_id %}"><span class="glyphicon glyphicon-pencil"></span></a>
+<a class="btn btn-primary" href="{% url 'user_remove' pk=user.user_id %}"><span class="glyphicon glyphicon-remove"></span></a>
+  </body>
+</html>
